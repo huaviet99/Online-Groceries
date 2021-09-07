@@ -31,16 +31,16 @@ class RoundedCornerButton extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              icon ?? Container(),
-              SizedBox(
-                width: 40.0,
-              ),
-              Text(
-                title,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 18.0,
+              icon ?? SizedBox(),
+              Expanded(
+                child: Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18.0,
+                  ),
                 ),
               ),
             ],

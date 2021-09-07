@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:online_groceries/colors.dart';
-import 'package:online_groceries/widgets/RoundedCornerButton.dart';
+import 'package:online_groceries/widgets/rounded_corner_button.dart';
 
 class StartPage extends StatelessWidget {
   @override
@@ -47,6 +47,13 @@ class StartPage extends StatelessWidget {
               fontWeight: FontWeight.w600,
             ),
           ),
+          SizedBox(height: 20.0),
+          TextField(
+            decoration: InputDecoration(
+              prefixIcon: Image.asset('images/ic_country.png'),
+            ),
+          ),
+          SizedBox(height: 40.0),
           Center(
             child: Text(
               'Or connect with social media',
@@ -57,18 +64,14 @@ class StartPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 30,
-          ),
+          SizedBox(height: 30),
           RoundedCornerButton(
             icon: FaIcon(FontAwesomeIcons.google),
             color: MyColor.cornFlowerBlue,
             title: 'Continue with Google',
             onPressed: () {},
           ),
-          SizedBox(
-            height: 20,
-          ),
+          SizedBox(height: 20),
           RoundedCornerButton(
             icon: FaIcon(FontAwesomeIcons.facebook),
             color: MyColor.marinerBlue,

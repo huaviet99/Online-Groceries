@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:online_groceries/colors.dart';
-import 'package:online_groceries/widgets/RoundedCornerButton.dart';
+import 'package:online_groceries/widgets/rounded_corner_button.dart';
 
 class OnboardingPage extends StatefulWidget {
   @override
